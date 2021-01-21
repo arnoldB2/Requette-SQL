@@ -38,4 +38,18 @@ WHERE nom LIKE '%E%';
 
 -- OPERATEURS LOGIQUES, ARITHMETIQUE ET CANCATENATION
 
--- SELECTIONNE LES NOM ET PRENOM DES EMPLOYE DONC LE SEXE EST M ET LE SALAIRE EST SUPERIEURE A 12000
+                             -- exercice 1
+
+--Sélectionnez le nom et le prénom de l'employé masculin qui gagne plus de 15000.
+
+SELECT nom, prenom FROM employe
+WHERE sexe = 'M' AND salaire > 15000;
+
+--Sélectionnez le prénom des 3 employés qui gagnent le plus. Tri par salaire descendant.
+
+SELECT prenom FROM employe
+--ORDER BY salaire DESC LIMIT 3
+
+--Sélectionnez le plus petit salaire aliasé en salaireMin
+SELECT salaire AS salaireMin 
+FROM employe
