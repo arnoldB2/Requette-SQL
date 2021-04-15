@@ -226,8 +226,6 @@ AND EXTRACT (YEAR FROM B.date_mvt)= EXTRACT (YEAR FROM B.DD)
 
 /*pour la problematique 6*/
 
-modification de code
-
 WITH COMPTE_FERMER_HIGH AS
 (
 SELECT pc.productid,
