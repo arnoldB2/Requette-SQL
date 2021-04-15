@@ -192,7 +192,7 @@ AND EXTRACT (YEAR FROM B.date_mvt)= EXTRACT (YEAR FROM B.DD)
 	ORDER BY 3 DESC;
 
 
-/* requete pour la problematique 4*/
+/* requete pour la problematique 4
 
 	SELECT r.date_ouv_cnt, 
        r.idperson, 
@@ -219,7 +219,7 @@ AND EXTRACT (YEAR FROM B.date_mvt)= EXTRACT (YEAR FROM B.DD)
                                      INNER JOIN person_scoring_rish ps on ps.PERSONACCOUNT_idPerson=p.idPerson 
                                      WHERE p.StatutCpt= "FERMER" AND p.Date_ouv_cnt IS NOT NULL)r1 
                                      )r WHERE
-                                        r.valid_to AND r.Sroring= "high"
+                                        r.valid_to AND r.Sroring= "high" */
 
 
 
